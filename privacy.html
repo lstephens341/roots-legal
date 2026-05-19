@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Roots Privacy Policy</title>
+<style>
+  :root {
+    --text: #1c1c1e;
+    --muted: #5c5246;
+    --accent: #7a4a1f;
+    --bg: #fafaf8;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Plus Jakarta Sans", "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.55;
+  }
+  main {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 56px 24px 80px;
+  }
+  h1 {
+    font-size: 36px;
+    line-height: 1.2;
+    margin: 0 0 8px;
+    letter-spacing: -0.5px;
+  }
+  .effective {
+    color: var(--muted);
+    font-size: 14px;
+    margin: 0 0 40px;
+  }
+  h2 {
+    font-size: 20px;
+    margin: 36px 0 12px;
+    letter-spacing: -0.2px;
+  }
+  p, ul { margin: 0 0 12px; }
+  ul { padding-left: 22px; }
+  li { margin-bottom: 6px; }
+  a { color: var(--accent); }
+  code {
+    background: #efeae0;
+    padding: 1px 6px;
+    border-radius: 4px;
+    font-size: 0.9em;
+  }
+  footer {
+    margin-top: 56px;
+    padding-top: 24px;
+    border-top: 1px solid #e5e0d6;
+    color: var(--muted);
+    font-size: 13px;
+  }
+</style>
+</head>
+<body>
+<main>
+  <h1>Roots Privacy Policy</h1>
+  <p class="effective">Effective 18 May 2026</p>
+
+  <p>
+    Roots is a tablet-first family-connection app. This policy explains what data
+    we collect, how it's stored, who can see it, and the rights you have over it.
+    It applies to the Roots iPad app and any related services.
+  </p>
+
+  <h2>Who we are</h2>
+  <p>
+    Roots is built and operated by Luke Stephens as an independent project.
+    Questions, requests, and complaints can be sent to
+    <a href="mailto:lstephens341@gmail.com">lstephens341@gmail.com</a>.
+  </p>
+
+  <h2>What we collect</h2>
+  <ul>
+    <li><strong>Account info.</strong> When you sign in with Google, we receive your email address and display name from Google. We do not receive your Google password.</li>
+    <li><strong>Household + profile info.</strong> The household name you choose, the residents you add (name, role, accent color, optional profile photo), and the per-group nicknames you set.</li>
+    <li><strong>Content you create.</strong> Photos you upload, memories you author (including titles, captions, decorations, audio, and video), and messages you send to other households.</li>
+    <li><strong>Photo metadata.</strong> Capture date and location stored in your photos' EXIF tags, used to organise photos by time and place. Location is only read from photos you choose to import.</li>
+    <li><strong>Connections.</strong> The other households you have connected with and the groups you are a member of.</li>
+    <li><strong>Invitations.</strong> When you invite someone to your household or to a group, we store the invite token, the role you assigned, and (if you used an email invite) the email address you entered. Invite tokens are single-use and expire.</li>
+    <li><strong>Diagnostic data.</strong> Anonymous error reports and basic usage logs to help us keep the app working. We do not use third-party advertising trackers.</li>
+    <li><strong>Beta testing data.</strong> While Roots is distributed through Apple TestFlight, Apple shares crash logs and any feedback you submit through TestFlight directly with us, in accordance with Apple's policies.</li>
+  </ul>
+
+  <h2>How it's stored</h2>
+  <p>
+    Roots stores your data in Supabase, a hosted Postgres + object storage
+    service running on AWS in the United States. Photos are stored in a private
+    storage bucket; database tables are protected by row-level security so that
+    only authorised households can read or change a given row.
+  </p>
+
+  <h2>Who can see your content</h2>
+  <ul>
+    <li><strong>You and your household.</strong> Everyone signed in to your household sees all of that household's photos, memories, messages, and residents.</li>
+    <li><strong>Connected households.</strong> Households that you connect with do <em>not</em> automatically see your content. They only see content you have specifically shared into a group that they are also a member of.</li>
+    <li><strong>No one else.</strong> Roots does not sell, rent, or share your content with advertisers, data brokers, or analytics resellers.</li>
+  </ul>
+
+  <h2>Third parties we rely on</h2>
+  <ul>
+    <li><strong>Supabase</strong> — database, authentication, object storage. <a href="https://supabase.com/privacy">supabase.com/privacy</a></li>
+    <li><strong>Google</strong> — sign-in only (OAuth). <a href="https://policies.google.com/privacy">policies.google.com/privacy</a></li>
+    <li><strong>Apple</strong> — app distribution via the App Store / TestFlight. <a href="https://www.apple.com/legal/privacy/">apple.com/legal/privacy</a></li>
+  </ul>
+
+  <h2>Your rights</h2>
+  <p>You can, at any time, from inside the app:</p>
+  <ul>
+    <li>Edit or remove any photo, memory, message, resident, group, or connection you have created.</li>
+    <li>Rename your household and change your own display name and avatar.</li>
+    <li>Sign out, which clears your session from the device.</li>
+    <li>
+      Permanently delete your account from <em>Settings → Delete account</em>.
+      When you delete your account, you have two options:
+      <ol type="1" style="margin-top: 6px;">
+        <li>
+          <strong>Keep my content with my household.</strong> Your account is
+          removed and your authorship links are cleared, but the photos and
+          memories you uploaded stay with your household and any group they
+          were shared into, so other residents and connected households can
+          still see them.
+        </li>
+        <li>
+          <strong>Fully delete my account and content.</strong> Your account,
+          your uploaded photos, and the memories you authored are permanently
+          deleted from Roots' database and storage. Other households that
+          had access to your shared content will lose it. Memories that other
+          people built using photos you uploaded will have those photos
+          removed from their layout.
+        </li>
+      </ol>
+    </li>
+  </ul>
+  <p>
+    If you need additional help — for example, exporting your content or
+    deleting data belonging to someone who can no longer access the app — email
+    <a href="mailto:lstephens341@gmail.com">lstephens341@gmail.com</a> and we'll
+    respond within 14 days.
+  </p>
+
+  <h2>Children</h2>
+  <p>
+    Roots is built for families and can be used by children with the consent
+    and involvement of a parent or guardian. Accounts are created with a Google
+    sign-in, which has its own age requirements. If you believe a child has
+    signed up without appropriate consent, email
+    <a href="mailto:lstephens341@gmail.com">lstephens341@gmail.com</a> and we
+    will delete the account.
+  </p>
+
+  <h2>Data retention</h2>
+  <p>
+    We privately and securely keep your content for as long as your household
+    exists. When you delete your account in "keep content" mode, your user
+    record and authorship links are removed immediately while your authored
+    content stays with your household for other residents; if you are the only
+    resident, the household's content is removed on a rolling basis within
+    30 days. When you delete your account in "fully delete" mode, your
+    authored photos and memories are removed from Roots' database and
+    storage immediately, with a final scrub of any orphaned files within 30
+    days.
+  </p>
+
+  <h2>Security</h2>
+  <p>
+    Network traffic between the app and our backend is encrypted with TLS.
+    Authentication tokens are stored in the device's secure keychain. Storage
+    objects are served via short-lived signed URLs. No system is perfectly
+    secure; if you believe your account has been compromised, email
+    <a href="mailto:lstephens341@gmail.com">lstephens341@gmail.com</a>.
+  </p>
+
+  <h2>Changes to this policy</h2>
+  <p>
+    We may update this policy as the app evolves. Material changes will be
+    surfaced in-app the next time you open it. The "Effective" date at the
+    top of this page indicates when the current version took effect.
+  </p>
+
+  <footer>
+    Roots &middot; Contact <a href="mailto:lstephens341@gmail.com">lstephens341@gmail.com</a>
+  </footer>
+</main>
+</body>
+</html>

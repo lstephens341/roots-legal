@@ -62,12 +62,13 @@
 <body>
 <main>
   <h1>Roots Privacy Policy</h1>
-  <p class="effective">Effective 18 May 2026</p>
+  <p class="effective">Effective 28 May 2026</p>
 
   <p>
-    Roots is a tablet-first family-connection app. This policy explains what data
-    we collect, how it's stored, who can see it, and the rights you have over it.
-    It applies to the Roots iPad app and any related services.
+    Roots is a family-connection app. This policy explains what data we collect,
+    how it's stored, who can see it, and the rights you have over it. It applies
+    to the Roots iPad app, the Roots companion app for iPhone, the forthcoming
+    Roots desktop app for Mac, and any related services.
   </p>
 
   <h2>Who we are</h2>
@@ -79,13 +80,14 @@
 
   <h2>What we collect</h2>
   <ul>
-    <li><strong>Account info.</strong> When you sign in with Google, we receive your email address and display name from Google. We do not receive your Google password.</li>
-    <li><strong>Household + profile info.</strong> The household name you choose, the residents you add (name, role, accent color, optional profile photo), and the per-group nicknames you set.</li>
+    <li><strong>Account info.</strong> When you sign in with Google or with Apple, we receive your email address and display name from the provider. We do not receive your password. If you use Apple's "Hide My Email" relay, we only receive the relay address.</li>
+    <li><strong>Phone number.</strong> During first-time setup we ask you to verify a phone number so the people you invite can recognise it's really you, and so invitations sent to your number can find their way to you. The verification code is sent by SMS via Twilio Verify. We store the verified phone number on your account; we do not store the verification code itself.</li>
+    <li><strong>Household + profile info.</strong> The household name you choose, the residents you add (name, role, accent color, optional profile photo, optional birthday), and the per-group nicknames you set.</li>
     <li><strong>Content you create.</strong> Photos you upload, memories you author (including titles, captions, decorations, audio, and video), and messages you send to other households.</li>
     <li><strong>Photo metadata.</strong> Capture date and location stored in your photos' EXIF tags, used to organise photos by time and place. Location is only read from photos you choose to import.</li>
     <li><strong>Connections.</strong> The other households you have connected with and the groups you are a member of.</li>
-    <li><strong>Invitations.</strong> When you invite someone to your household or to a group, we store the invite token, the role you assigned, and (if you used an email invite) the email address you entered. Invite tokens are single-use and expire.</li>
-    <li><strong>Diagnostic data.</strong> Anonymous error reports and basic usage logs to help us keep the app working. We do not use third-party advertising trackers.</li>
+    <li><strong>Invitations.</strong> When you invite someone to your household or to a group, we store the invite token, the role you assigned, and (if you used an email or phone invite) the contact address you entered. Invite tokens are single-use and expire.</li>
+    <li><strong>Diagnostic data.</strong> Anonymous error reports collected via Sentry to help us keep the app working. Personal identifiers (names, emails, phone numbers, household IDs) are scrubbed on-device before reports are sent. We do not use third-party advertising trackers.</li>
     <li><strong>Beta testing data.</strong> While Roots is distributed through Apple TestFlight, Apple shares crash logs and any feedback you submit through TestFlight directly with us, in accordance with Apple's policies.</li>
   </ul>
 
@@ -108,7 +110,9 @@
   <ul>
     <li><strong>Supabase</strong> — database, authentication, object storage. <a href="https://supabase.com/privacy">supabase.com/privacy</a></li>
     <li><strong>Google</strong> — sign-in only (OAuth). <a href="https://policies.google.com/privacy">policies.google.com/privacy</a></li>
-    <li><strong>Apple</strong> — app distribution via the App Store / TestFlight. <a href="https://www.apple.com/legal/privacy/">apple.com/legal/privacy</a></li>
+    <li><strong>Apple</strong> — Sign in with Apple (OAuth) and app distribution via the App Store / TestFlight. <a href="https://www.apple.com/legal/privacy/">apple.com/legal/privacy</a></li>
+    <li><strong>Twilio</strong> — SMS delivery for phone-number verification (Twilio Verify). <a href="https://www.twilio.com/legal/privacy">twilio.com/legal/privacy</a></li>
+    <li><strong>Sentry</strong> — diagnostic and crash reports, scrubbed of personal identifiers before sending. <a href="https://sentry.io/privacy/">sentry.io/privacy</a></li>
   </ul>
 
   <h2>Your rights</h2>
